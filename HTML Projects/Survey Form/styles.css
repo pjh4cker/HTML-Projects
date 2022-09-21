@@ -1,0 +1,83 @@
+
+
+.header{
+  padding: 0 0.625rem;
+  margin: 0 0 1.875rem 0;
+}
+
+body::before{
+  content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(4, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ 
+body{
+  width: 100%;
+  margin: 0 auto 1.25rem auto;
+  padding: 2.5rem;
+  font-family: 'Poppins',san-serif;
+  min-width: 300px;
+  max-widht: 600px;
+  color: white;
+
+}
+
+
+
+h1, p{
+  text-align: center;
+  
+}
+
+fieldset{
+  padding: 2rem;
+  background: rgba(27, 27, 50, 0.8);
+  border: 2px rgba(27, 27, 50, 0.8);
+  border-radius: 10px;
+  width:50%;
+  margin: auto;
+}
+
+form {
+   display: block;
+   height: auto;
+   width: 100%;
+   min-width: 400px;
+   max-width: 600px;
+   margin: 0 auto;
+   font-size: 1rem;
+   font-weight: 400;
+   color:white;
+}
+
+
+input[type="submit"]{
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  min-width: 300px;
+}
+
+input, textarea, select{
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  border-sizing: inherit
+}
+
+input[type="text"], input[type="number"], input[type="email"], select
+{
+  width: 100%
+}
+
